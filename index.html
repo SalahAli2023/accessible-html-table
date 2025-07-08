@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible HTML Table</title>
+    <style>
+        table { border-collapse: collapse; width: 80%; margin: 20px auto; }
+        th, td { border: 1px solid #dbd2d2;color:black ; padding: 8px; text-align: left; }
+        th { background-color: #043b76;color:white }
+    </style>
+</head>
+<body>
+    <h1>Weekly Sales Report</h1>
+    <table aria-label="Weekly sales data for 2023">
+        <caption>Sales Data for June month</caption>
+        <thead>
+            <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Product 1</th>
+                <th scope="col">Product 2</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Saturday</th>
+                <td>$15</td>
+                <td>$20</td>
+                <td>$35</td>
+            </tr>
+            <tr>
+                <th scope="row">Sunday</th>
+                <td>$18</td>
+                <td>$22</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <th scope="row">Monday</th>
+                <td>$20</td>
+                <td>$25</td>
+                <td>$45</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
